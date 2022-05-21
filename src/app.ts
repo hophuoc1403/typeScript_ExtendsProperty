@@ -85,7 +85,7 @@ class student extends human {
   };
 
   ShowInfoStd(): void {
-    var table = document.querySelector("#table");
+    var table = document.querySelector("#table2");
     let myElm = document.createElement("tr");
     if (listStd.length > 0) {
       for (let i = 0; i < listStd.length; i++) {
@@ -151,7 +151,7 @@ class employee extends human {
     return innerRating;
   };
   showInfoEmploy() {
-    var table = document.querySelector("#table");
+    var table = document.querySelector("#table3");
     let myElm = document.createElement("tr");
     if (listEmploy.length > 0) {
       for (let i = 0; i < listEmploy.length; i++) {
@@ -186,18 +186,22 @@ class employee extends human {
 }
 
 var human2 = new human("phuoc1", 21, 0, "hai phong");
-var human3 = new human("phuoc", 25, 0, "hai phong");
-var human4 = new human("phuoc", 26, 1, "hai phong");
+var human4 = new human("sondang", 26, 1, "hai phong");
 var human5 = new human("huy", 25, 1, "hai phong");
 human2.showInfo();
-human3.showInfo();
 human4.showInfo();
 human5.showInfo();
+
 var student1 = new student("tu", 20, 1, "hp", "1b", 10, 10, 10);
 student1.ShowInfoStd();
-var student2 = new student("phuoc", 20, 1, "hp", "2b", 10, 10, 10);
+var student2 = new student("quyen", 20, 1, "hp", "2b", 10, 10, 10);
 student2.ShowInfoStd();
+var student3 = new student("linh", 20, 1, "hp", "23b", 10, 10, 10);
+student3.ShowInfoStd();
+
 var employee1 = new employee("nga", 30, 0, "hanoi", "32b", 200, 30);
 employee1.showInfoEmploy();
-var employee2 = new employee("nguuuu", 35, 2, "hue", "32b", 2000, 30);
+var employee2 = new employee("nguuu", 35, 2, "hue", "364b", 2000, 30);
 employee2.showInfoEmploy();
+var employee3 = new employee("nguuuu", 35, 2, "hue", "363b", 2000, 30);
+employee3.showInfoEmploy();
