@@ -1,1 +1,1 @@
-# typeScript_ExtendsProperty
+# typeScript_ExtendsProperty1
