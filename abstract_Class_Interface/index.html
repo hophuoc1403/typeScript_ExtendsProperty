@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeScript</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    input,
+    button {
+        margin: 10px auto;
+    }
+
+    button:first-child {
+        position: relative;
+    }
+
+    input {
+        width: 300px;
+        border: unset;
+        border-bottom: 2px solid steelblue;
+        outline: none;
+    }
+
+    input:focus {
+        border-bottom: 2px solid rgb(249, 0, 232);
+        transition: .25s;
+    }
+
+    ul {
+        border: 3px solid lightgreen;
+        border-radius: 10px;
+    }
+
+    li {
+        margin-bottom: 10px;
+        text-align: center;
+        list-style: none;
+    }
+
+    .fa-hand-back-fist {
+        color: blueviolet;
+    }
+
+    .fa-power-off {
+        padding: 5px;
+        background-color: rgb(255, 85, 0);
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    span {
+        color: brown;
+        font-weight: bold;
+    }
+
+    .buttonUpdate {
+        position: absolute;
+        top: 132px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: none;
+        transition: 0.25s;
+    }
+</style>
+
+<body>
+    <div class="container-fluid">
+        <input id="id" class="d-block mb-3 " type="text" placeholder="your ID">
+        <input id="name" class="d-block mb-3 " type="text" placeholder="your name">
+        <input id="price" class="d-block mb-3 " type="text" placeholder="your price">
+        <button onclick="addItem()" class="d-block btn btn-primary">submit</button>
+        <button onclick="updateItemValue(value.id)" class="buttonUpdate btn btn-success">update</button>
+    </div>
+
+    <div class="container mt-3">
+        <h2>List Product</h2>
+        <ul id="list">
+
+        </ul>
+    </div>
+
+
+
+
+    <script src="./build/app.js"></script>
+</body>
+
+</html>
